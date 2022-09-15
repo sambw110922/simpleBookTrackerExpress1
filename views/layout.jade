@@ -3,5 +3,24 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+  
   body
+
+   // Navigation
+   nav 
+     
+    h1(id="mainLink") #[a(href="./") Hello world]
+
+    div(id="navList")
+     #[a(href="./booksread" class="mainNavListLink") Books Read]
+     #[a(href="" class="mainNavListLink") Books Owned]
+     #[a(href="" class="mainNavListLink") Books To Read]
+     #[a(href="./about" class="mainNavListLink") About]
+
+   //  The rest of page
+   div
     block content
+
+   // Footer
+   footer 
+    p 2022 

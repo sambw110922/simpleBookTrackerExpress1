@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+ div(class="hero")
+  h1 Books I've Read
+  p The books I've read so far this year.
+  p Total: #{ mybooks.length } 
+
+ div
+  ul(id="theRealBookList")
+   each book in mybooks
+    li(class="bookItem")
+     p(class="bookTitle") #{book.title}
+     p(class="bookAuthor") #{book.author}

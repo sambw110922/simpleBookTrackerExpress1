@@ -1,8 +1,102 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+/*
+  mainstyle
+
+  pallet: 
+  from https://color.adobe.com/search?q=autumn
+  ========
+  lightgreen = #7AA999
+  gold = #D4A5FC
+  orange = #D16C44
+  brown = #572D28
+  dark orange = #C55242
+  white = #FFFFFF
+  black = #000000
+
+
+*/
+
+html, body {
+  position: absolute;
+  left: 0; top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Verdana", sans-serif;
+  font-size: 18px;
+  background-color: #D16C44;
+  color: #FFFFFF;
 }
 
-a {
-  color: #00B7FF;
+nav {
+  padding: 5%;
+  text-align: center;
+  background-color: #7AA999;
+  color: #000000;
+}
+
+
+
+footer {
+  background-color: #7AA999;
+  padding: 5%;
+  margin-top: 20%;
+}
+
+#mainLink a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#mainLink a:hover {
+  text-decoration: none;
+}
+
+#navList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mainNavListLink {
+  color: #000000;
+  font-size: 1.8em;
+}
+
+.mainNavListLink:hover {
+  text-decoration: none;
+}
+
+.hero {
+  margin: 2%;
+  padding: 5%;
+  background-color:#572D28;
+}
+
+#theRealBookList li {
+  list-style-type: none;
+}
+
+.bookItem {
+  margin-top: 1%;
+  background-color: #C55242;
+  color: #ffffff;
+  padding: 2%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.bookItem:hover {
+  margin-right: 5%;
+}
+
+.bookTitle {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.bookAuthor {
+ text-decoration: italic;
+ font-size: 1.2em;
 }
