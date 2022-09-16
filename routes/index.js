@@ -1,44 +1,16 @@
 var express = require('express');
 var router = express.Router();
 
+express.urlencoded({ extended: true })
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('index', { title: 'Book Tracker' });
 });
 
 //  Read books
-router.get("/booksread", function(req, res, next){
+router.get("/booksread", function(req, res){
   
-  /*
-  //  Books I've read
-  var br = [
-    {
-      "author":"JRR Tolkien",
-      "title":"The Lord of the Rings: The Fellowship of the Ring"
-    },
-    {
-      "author":"JRR Tolkien",
-      "title":"The Lord of the Rings: The Two Towers"
-    },
-    {
-      "author":"Stephen King",
-      "title":"The Outsider"
-    },
-    {
-      "author":"Stephen King",
-      "title":"The Revival"
-    },
-    {
-      "author":"Stephen King",
-      "title":"Lisey's Story"
-    },
-    {
-      "author":"Peter Robinson",
-      "title":"Before the Poison"
-    },
-  ];
-  */
-
     //  default book
     var tb = [
       {
@@ -71,30 +43,7 @@ router.get("/booksread", function(req, res, next){
 });
 
 //  The books that I own.
-router.get("/booksowned", function(req, res, next){
-
-  /*
-  //  Books that I own.
-  var bo = [
-    {
-      "author":"JRR Tolkien",
-      "title":"The Hobbit"
-    },
-    {
-      "author":"JRR Tolkien",
-      "title":"The Lord of the Rings: The Fellowship of the Ring"
-    },
-    {
-      "author":"JRR Tolkien",
-      "title":"The Lord of the Rings: The Two Towers"
-    },
-    {
-      "author":"JRR Tolkien",
-      "title":"The Lord of the Rings: The Two Towers"
-    },
-  ];
-
-  */
+router.get("/bookshave", function(req, res){
 
   //  default book
   var tb = [
@@ -129,7 +78,7 @@ router.get("/booksowned", function(req, res, next){
 });
 
 //  Total books
-router.get("/totalbooks", function(req, res, next){
+router.get("/totalbooks", function(req, res){
 
   var tb = [
     {
@@ -143,8 +92,14 @@ router.get("/totalbooks", function(req, res, next){
 
   const bookdata = require("../public/json/totalbooks.json")
  
-  tb = bookdata;
+  var totbook = [];
 
+  for(let i = 0; i < bookdata.booklist.length; i++){
+    totbook.push(bookdata.booklist[i]);
+  }
+
+  tb = totbook;
+   
   res.render("totalbooks", { totalBooks : tb });
 
 });
@@ -153,5 +108,6 @@ router.get("/totalbooks", function(req, res, next){
 router.get("/about", function(req, res, next){
  res.render("about");
 });
+
 
 module.exports = router;

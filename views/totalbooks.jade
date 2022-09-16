@@ -4,12 +4,11 @@ block content
 
  div(class="hero")
   h1 Total books
-  p Total books read and owned
-  p Total: #{ totalBooks.booklist.length } 
+  p Total: #{ totalBooks.length } 
 
  div
   ul(id="theRealBookList")
-   each book in totalBooks.booklist
+   each book in totalBooks
     li(class="bookItem")
      p(class="bookTitle") #{ book.bookTitle }
      p(class="bookAuthor") #{ book.bookAuthor }

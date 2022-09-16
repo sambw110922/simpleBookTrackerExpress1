@@ -72,21 +72,21 @@
         },
         {
             "bookID" : 10,
-            "bookTitle" : "Northern Lights",
+            "bookTitle" : "His Dark Materials: Northern Lights",
             "bookAuthor" : "Phillip Pullman",
             "isOwned" : true,
             "hasRead" : false
         },
         {
             "bookID" : 11,
-            "bookTitle" : "The Subtle Knife",
+            "bookTitle" : "His Dark Materials: The Subtle Knife",
             "bookAuthor" : "Phillip Pullman",
             "isOwned" : true,
             "hasRead" : false
         },
         {
             "bookID" : 12,
-            "bookTitle" : "The Amber Spyglass",
+            "bookTitle" : "His Dark Materials: The Amber Spyglass",
             "bookAuthor" : "Phillip Pullman",
             "isOwned" : true,
             "hasRead" : false
