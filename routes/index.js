@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-express.urlencoded({ extended: true })
-
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Book Tracker' });
@@ -24,8 +22,6 @@ router.get("/booksread", function(req, res){
   
     //  get books
     const bookdata = require("../public/json/totalbooks.json")
-   
-    tb = bookdata;
   
     //  Books owned
     var br = [];
