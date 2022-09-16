@@ -1,0 +1,96 @@
+{
+    "booklist" : [
+        {
+            "bookID" : 1,
+            "bookTitle" : "The Hobbit",
+            "bookAuthor" : "JRR Tolkien",
+            "isOwned" : true,
+            "hasRead" : false
+        },
+        {
+            "bookID" : 2,
+            "bookTitle" : "The Lord of the Rings: The Fellowship of the Ring",
+            "bookAuthor" : "JRR Tolkien",
+            "isOwned" : true,
+            "hasRead" : true
+        },
+        {
+            "bookID" : 3,
+            "bookTitle" : "The Lord of the Rings: The Two Towers",
+            "bookAuthor" : "JRR Tolkien",
+            "isOwned" : true,
+            "hasRead" : true
+        },
+        {
+            "bookID" : 4,
+            "bookTitle" : "The Lord of the Rings: The Return of the King",
+            "bookAuthor" : "JRR Tolkien",
+            "isOwned" : true,
+            "hasRead" : true
+        },
+        {
+            "bookID" : 5,
+            "bookTitle" : "Harry Potter and the Goblet of Fire",
+            "bookAuthor" : "JK Rowling",
+            "isOwned" : true,
+            "hasRead" : false
+        },
+        {
+            "bookID" : 6,
+            "bookTitle" : "Harry Potter and Order of the Pheonix",
+            "bookAuthor" : "JK Rowling",
+            "isOwned" : true,
+            "hasRead" : false
+        },
+        {
+            "bookID" : 6,
+            "bookTitle" : "The Outsider",
+            "bookAuthor" : "Stephen King",
+            "isOwned" : false,
+            "hasRead" : true
+        },
+        {
+            "bookID" : 7,
+            "bookTitle" : "The Revival",
+            "bookAuthor" : "Stephen King",
+            "isOwned" : false,
+            "hasRead" : true
+        },
+        {
+            "bookID" : 8,
+            "bookTitle" : "Lisey's Story",
+            "bookAuthor" : "Stephen King",
+            "isOwned" : false,
+            "hasRead" : true
+        },
+        {
+            "bookID" : 9,
+            "bookTitle" : "Before the Poison",
+            "bookAuthor" : "Peter Robinson",
+            "isOwned" : false,
+            "hasRead" : true
+        },
+        {
+            "bookID" : 10,
+            "bookTitle" : "Northern Lights",
+            "bookAuthor" : "Phillip Pullman",
+            "isOwned" : true,
+            "hasRead" : false
+        },
+        {
+            "bookID" : 11,
+            "bookTitle" : "The Subtle Knife",
+            "bookAuthor" : "Phillip Pullman",
+            "isOwned" : true,
+            "hasRead" : false
+        },
+        {
+            "bookID" : 12,
+            "bookTitle" : "The Amber Spyglass",
+            "bookAuthor" : "Phillip Pullman",
+            "isOwned" : true,
+            "hasRead" : false
+        }
+
+    ]
+}

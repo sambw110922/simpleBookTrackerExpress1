@@ -3,13 +3,13 @@ extends layout
 block content
 
  div(class="hero")
-  h1 Books I've Read
-  p The books I've read so far this year.
-  p Total: #{ booksread.length } 
+  h1 Books I Own
+  p The books that I own.
+  p Total: #{ booksowned.length } 
 
  div
   ul(id="theRealBookList")
-   each book in booksread
+   each book in booksowned
     li(class="bookItem")
      p(class="bookTitle") #{ book.bookTitle }
      p(class="bookAuthor") #{ book.bookAuthor }
